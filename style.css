@@ -234,6 +234,19 @@ h2 svg {
   vertical-align: middle;
 }
 
+.metric {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-radius: 4px;
+  padding: 1px 7px;
+  margin-left: 4px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
 .award {
   display: inline-block;
   font-size: 0.7rem;
