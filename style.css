@@ -42,9 +42,9 @@ body {
   line-height: 1.65;
   color: var(--text);
   background: var(--page);
-  max-width: 920px;
+  max-width: 860px;
   margin: 0 auto;
-  padding: 56px 36px 96px;
+  padding: 56px 32px 96px;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   transition: background 0.2s, color 0.2s;
