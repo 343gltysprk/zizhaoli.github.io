@@ -24,3 +24,23 @@
     });
   });
 })();
+
+// Footer: auto-fill current year and the page's last-modified date.
+// On GitHub Pages, document.lastModified reflects the latest deploy time.
+(function () {
+  document.addEventListener("DOMContentLoaded", function () {
+    const yearEl = document.getElementById("year");
+    const updatedEl = document.getElementById("updated");
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+    if (updatedEl) {
+      const d = new Date(document.lastModified);
+      if (!isNaN(d)) {
+        updatedEl.textContent = d.toLocaleDateString("en-AU", {
+          month: "long",
+          year: "numeric",
+        });
+      }
+    }
+  });
+})();
